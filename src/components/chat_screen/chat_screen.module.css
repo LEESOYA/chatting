@@ -1,0 +1,39 @@
+@value bgSnow from '../../common/colors.css';
+@value chatLavender from '../../common/colors.css';
+
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+.chatContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: bgSnow;
+  width: 20em;
+  height: 60vh;
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 25px;
+}
+
+.chatScreen {
+  overflow-y: scroll;
+  height: 85%;
+  margin-top: 20px;
+  scroll-behavior: smooth;
+}
+.chatScreen::-webkit-scrollbar {
+  display: none !important;
+}
+.chatList {
+  margin: 15px;
+  text-align: right;
+}
+
+.msg {
+  width: auto;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: chatLavender;
+  font-family: "Hi Melody", cursive;
+}
